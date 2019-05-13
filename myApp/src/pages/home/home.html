@@ -1,0 +1,59 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Página 1</ion-title>
+  </ion-navbar>
+</ion-header> -->
+<!-- padding é o preenchimento -->
+<!-- <ion-content padding>
+  <h2>Welcome to myApp!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+</ion-content> -->
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        DateTime
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="outer-content">
+  <p><strong>Schedule your victory :D</strong></p>
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="Nome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Descrição"></ion-input>
+      </ion-item>
+    </ion-list>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label>Start Date</ion-label>
+        <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+      </ion-item>
+  
+  
+      <ion-item>
+        <ion-label>Start Time</ion-label>
+        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="event.timeStarts"></ion-datetime>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Ends</ion-label>
+        <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.timeEnds"></ion-datetime>
+      </ion-item>
+    
+    </ion-list>
+    <img id="ionic-img" src="assets/imgs/mobile.jpg">
+     
+  </ion-content>
+  

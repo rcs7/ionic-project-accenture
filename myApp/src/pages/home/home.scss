@@ -1,0 +1,13 @@
+page-home {
+    ion-list:first-child {
+        margin-top: 32px;
+    }
+    ion-list + ion-list {
+        margin-top: 0;
+    }
+    p{
+        text-align: center;
+        caption-side: top;
+        color: blue;
+    }
+}
