@@ -22,6 +22,8 @@ export class IntroductionPage {
   public impressaoAngular:number = 0; 
   public impressaoWeb:number = 0; 
 
+  public show:boolean=true;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
@@ -34,7 +36,12 @@ export class IntroductionPage {
   public printOkTres(){
     this.impressaoWeb = 1;
   }
-
+  
+  //Usada pra aparecer e desaparecer o texto de informações 
+  //sobre o Ionic, Angular ou HTML, TS, SASS
+  invert(){
+    this.show = !this.show;
+  }
 
 
   ionViewDidLoad() {
