@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { About1Page } from '../pages/about1/about1';
+import { HomePage1 } from '../pages/home1/home1';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -16,12 +16,14 @@ import { FeedPageModule } from '../pages/feed/feed.module';
 import { IntroductionPageModule } from '../pages/introduction/introduction.module';
 import { About1PageModule } from '../pages/about1/about1.module';
 import { CriarMetasPageModule } from '../pages/criar-metas/criar-metas.module';
+import { Home1PageModule } from '../pages/home1/home1.module';
+//import { HomePage1 } from '../pages/home1/home1';
 
 @NgModule({
   declarations: [
     MyApp,
     //About1Page,
-    HomePage,
+   // HomePage1,
     TabsPage,
     // FeedPageModule
   ],
@@ -38,13 +40,13 @@ import { CriarMetasPageModule } from '../pages/criar-metas/criar-metas.module';
     //cima: import { IntroductionPageModule } from '../pages/introduction/introduction.module';
     IntroductionPageModule,
     About1PageModule,
-    CriarMetasPageModule
-    
+    CriarMetasPageModule,
+    Home1PageModule,    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
+    HomePage1,
     TabsPage,
     About1Page,
   ],

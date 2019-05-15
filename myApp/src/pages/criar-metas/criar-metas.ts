@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 // Importei a HomePage pra poder usar os dados que estão nas variáveis públicas: nome e descricao
-import { HomePage } from '../home/home';
+//import { HomePage1 } from '../home1/home1';
 
 /**
  * Generated class for the CriarMetasPage page.
@@ -25,7 +25,7 @@ export class CriarMetasPage {
     console.log('ionViewDidLoad CriarMetasPage');
   }
   
-  public imprimeNomeDescricao(){
-    this.nomeDaq =  
-  }
+  // public imprimeNomeDescricao(){
+  //   this.nomeDaq =  
+  // }
 }

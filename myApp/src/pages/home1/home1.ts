@@ -4,10 +4,10 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-home1',
+  templateUrl: 'home1.html'
 })
-export class HomePage {
+export class HomePage1 {
   
   //criei pra receber o nome digitado
   public nome:string;
