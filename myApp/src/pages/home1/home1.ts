@@ -1,7 +1,7 @@
 
 // arq de código que faz a  config do componente. Configura todas as dependências dele.
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-home1',
@@ -15,7 +15,7 @@ export class HomePage1 {
   public descricao:string;
  
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams:NavParams) {
 
   }
 
@@ -23,6 +23,10 @@ export class HomePage1 {
     month: '1990-02-19',
     timeStarts: '07:43',
     timeEnds: '1990-02-20'
+  }
+
+  public goToPageHome(){
+      this.navCtrl.push('HomePage');
   }
 
 

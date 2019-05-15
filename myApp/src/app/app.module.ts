@@ -8,7 +8,6 @@ import { About1Page } from '../pages/about1/about1';
 import { HomePage1 } from '../pages/home1/home1';
 
 
-import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 //gerado automaticamente ao colocar FeedPageModule lá no import, lá em baixo
 import { FeedPageModule } from '../pages/feed/feed.module';
@@ -18,6 +17,12 @@ import { About1PageModule } from '../pages/about1/about1.module';
 import { CriarMetasPageModule } from '../pages/criar-metas/criar-metas.module';
 import { Home1PageModule } from '../pages/home1/home1.module';
 //import { HomePage1 } from '../pages/home1/home1';
+
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { IonicStorageModule } from '@ionic/storage';
+
+
 
 @NgModule({
   declarations: [
@@ -41,7 +46,10 @@ import { Home1PageModule } from '../pages/home1/home1.module';
     IntroductionPageModule,
     About1PageModule,
     CriarMetasPageModule,
-    Home1PageModule,    
+    Home1PageModule, 
+
+    IonicStorageModule.forRoot(),   
+  
   ],
   bootstrap: [IonicApp],
   entryComponents: [
