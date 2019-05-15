@@ -36,6 +36,7 @@ import { IonicStorageModule } from '@ionic/storage';
     BrowserModule,
     // Difo que o módulo Root vai ser o meu MyApp
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(), 
     //Adicionei esta linha abaixo pra que minha pag que criei feed fosse add na minha aplicação, aí ele me
     //deu uma lâmpada amarela pra eu importar Feed... aí apareceu automaticamente essa linha que está lá em 
     //cima: import { FeedPageModule } from '../pages/feed/feed.module';
@@ -46,9 +47,7 @@ import { IonicStorageModule } from '@ionic/storage';
     IntroductionPageModule,
     About1PageModule,
     CriarMetasPageModule,
-    Home1PageModule, 
-
-    IonicStorageModule.forRoot(),   
+    Home1PageModule,  
   
   ],
   bootstrap: [IonicApp],

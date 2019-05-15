@@ -1,4 +1,3 @@
-
 // arq de código que faz a  config do componente. Configura todas as dependências dele.
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
@@ -28,6 +27,7 @@ export class HomePage1 {
   public goToPageHome(){
       this.navCtrl.push('HomePage');
   }
+
 
 
 }
