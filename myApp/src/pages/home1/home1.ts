@@ -13,8 +13,8 @@ export class HomePage1 {
   //criei pra receber a descricao digitado
   public descricao:string;
  
-
-  constructor(public navCtrl: NavController, public navParams:NavParams) {
+                                         //, public navParams:NavParams
+  constructor(public navCtrl: NavController) {
 
   }
 
@@ -24,9 +24,9 @@ export class HomePage1 {
     timeEnds: '1990-02-20'
   }
 
-  public goToPageHome(){
-      this.navCtrl.push('HomePage');
-  }
+  // public goToPageHome(){
+  //     this.navCtrl.push('HomePage');
+  // }
 
 
 

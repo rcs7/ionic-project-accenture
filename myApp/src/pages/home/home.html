@@ -1,7 +1,7 @@
 <!-- ion-header é um componente pai que contém a barra de navegação -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Início</ion-title>
+    <ion-title>Goals</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -11,7 +11,7 @@
 
   <ion-list>
     <ion-list-header no-lines>
-      Minhas tarefas
+      My goals:
     </ion-list-header>
 
     <ion-item *ngFor="let task of tasks; let i=index">
@@ -28,7 +28,7 @@
         {{ task.description }}
       </span>
 
-      <ion-icon item-end name="trash" color="danger" 
+      <ion-icon item-end name="trash" color="blue" 
         (click)="deleteTask(i)">
       </ion-icon>
     </ion-item>
@@ -42,7 +42,7 @@
     -->
     <ion-item *ngIf="!tasks.length">
       <ion-note>
-        Lista vazia
+        empty list
       </ion-note>
     </ion-item>
   </ion-list>

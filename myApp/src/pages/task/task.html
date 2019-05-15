@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Tarefa</ion-title>
+    <ion-title>Believe in you</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -8,19 +8,18 @@
 
   <ion-list>
     <ion-list-header no-lines>
-      Nova tarefa
+      Enter a New goal
     </ion-list-header>
 
     <ion-item>
-      <ion-label floating>Descrição</ion-label>
+      <ion-label floating>Describe your goal</ion-label>
       <ion-input type="text" [(ngModel)]="description"></ion-input>
     </ion-item>
   </ion-list>
 
   <button ion-button icon-start (click)="addTask()">
     <ion-icon name="add"></ion-icon>
-    {{ task?.description ? 'Editar' : 'Adicionar' }}
+    {{ task?.description ? 'Edit' : 'Add' }}
   </button>
 
 </ion-content>
-

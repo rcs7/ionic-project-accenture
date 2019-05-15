@@ -21,6 +21,7 @@ import { Home1PageModule } from '../pages/home1/home1.module';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
+import { HomePage } from '../pages/home/home';
 
 
 
@@ -30,6 +31,7 @@ import { IonicStorageModule } from '@ionic/storage';
     //About1Page,
    // HomePage1,
     TabsPage,
+    HomePage,
     // FeedPageModule
   ],
   imports: [
@@ -48,7 +50,7 @@ import { IonicStorageModule } from '@ionic/storage';
     About1PageModule,
     CriarMetasPageModule,
     Home1PageModule,  
-  
+   
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -56,6 +58,7 @@ import { IonicStorageModule } from '@ionic/storage';
     HomePage1,
     TabsPage,
     About1Page,
+    HomePage,
   ],
   providers: [
     StatusBar,
