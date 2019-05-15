@@ -1,7 +1,7 @@
 <!-- ion-header é um componente pai que contém a barra de navegação -->
 <ion-header>
   <ion-navbar>
-    <ion-title>Goals</ion-title>
+    <ion-title>Links</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -11,7 +11,7 @@
 
   <ion-list>
     <ion-list-header no-lines>
-      My goals:
+      My links:
     </ion-list-header>
 
     <ion-item *ngFor="let task of tasks; let i=index">
@@ -25,7 +25,8 @@
       </ion-icon>
 
       <span (click)="editTask(task.description, i)">
-        {{ task.description }}
+        <p><a href="{{ task.description }}" title="Brasília time">{{ task.description }}</a></p>
+        <!-- {{ task.description }}  -->
       </span>
 
       <ion-icon item-end name="trash" color="blue" 

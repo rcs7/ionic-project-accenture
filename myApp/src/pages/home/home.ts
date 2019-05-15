@@ -51,7 +51,7 @@ export class HomePage {
     this.storage.remove(this.tasks[index].id)
       .then(() => {
         this.tasks.splice(index, 1);
-        this.presentToast('Item deletado!');
+        this.presentToast('');
       })
       .catch(this.handleError);
   }

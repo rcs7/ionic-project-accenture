@@ -22,6 +22,7 @@ import { Home1PageModule } from '../pages/home1/home1.module';
 import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
 import { HomePage } from '../pages/home/home';
+// import { UrlPage } from '../pages/url/url';
 
 
 
@@ -32,6 +33,7 @@ import { HomePage } from '../pages/home/home';
    // HomePage1,
     TabsPage,
     HomePage,
+    // UrlPage,
     // FeedPageModule
   ],
   imports: [
@@ -59,6 +61,7 @@ import { HomePage } from '../pages/home/home';
     TabsPage,
     About1Page,
     HomePage,
+    // UrlPage,
   ],
   providers: [
     StatusBar,
